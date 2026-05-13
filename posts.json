@@ -1,0 +1,38 @@
+[
+  {
+    "id": "hello-world",
+    "title": "Hello World — 我的第一篇博客",
+    "date": "2026-05-10",
+    "category": "随笔",
+    "tags": ["生活", "博客"],
+    "summary": "这是我的第一篇博客文章，记录开始写作的初心。",
+    "file": "hello-world.md"
+  },
+  {
+    "id": "js-tips",
+    "title": "10 个实用的 JavaScript 技巧",
+    "date": "2026-05-12",
+    "category": "技术",
+    "tags": ["JavaScript", "前端"],
+    "summary": "分享 10 个日常开发中非常实用的 JavaScript 技巧，让你的代码更简洁优雅。",
+    "file": "js-tips.md"
+  },
+  {
+    "id": "css-grid",
+    "title": "CSS Grid 布局完全指南",
+    "date": "2026-05-13",
+    "category": "技术",
+    "tags": ["CSS", "前端", "布局"],
+    "summary": "深入理解 CSS Grid 布局，从基础概念到实战案例，掌握现代网页布局。",
+    "file": "css-grid.md"
+  },
+  {
+    "id": "git-workflow",
+    "title": "高效的 Git 工作流实践",
+    "date": "2026-04-28",
+    "category": "工具",
+    "tags": ["Git", "效率", "协作"],
+    "summary": "介绍团队协作中常用的 Git 工作流，帮助你高效管理代码版本。",
+    "file": "git-workflow.md"
+  }
+]

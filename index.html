@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的博客</title>
+  <meta name="description" content="个人博客 — 分享技术笔记、读书感悟和生活思考。涵盖 JavaScript、CSS、Git 等前端开发主题。">
+  <meta name="keywords" content="博客,技术,前端,JavaScript,CSS,Git,编程">
+  <meta property="og:title" content="我的博客">
+  <meta property="og:description" content="分享技术笔记、读书感悟和生活思考的个人博客。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOUR_USERNAME.github.io/blog/">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">🏠 我的博客</a>
+      <div class="nav-links">
+        <a href="index.html" class="active">首页</a>
+        <a href="about.html">关于</a>
+        <button id="themeToggle" class="theme-btn" title="切换主题">🌙</button>
+      </div>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于</a>
+    </div>
+  </nav>
+
+  <main class="container main-layout">
+    <aside class="sidebar">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="🔍 搜索文章...">
+      </div>
+
+      <div class="sidebar-section">
+        <h3>📂 分类</h3>
+        <ul class="category-list" id="categoryList"></ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>🏷 标签</h3>
+        <div class="tag-cloud" id="tagCloud"></div>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div class="filter-bar">
+        <span id="filterLabel">📄 全部文章</span>
+        <button id="clearFilter" class="clear-filter" style="display:none">清除筛选</button>
+      </div>
+      <div class="post-list" id="postList"></div>
+      <div class="no-results" id="noResults" style="display:none">
+        <p>😕 没有找到匹配的文章</p>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" title="返回顶部">↑</button>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 我的博客 · Powered by ❤️</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
