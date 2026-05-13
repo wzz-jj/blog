@@ -2,6 +2,111 @@
 // No fetch() needed — works with file:// protocol
 const POSTS_DATA = [
   {
+    "id": "free-blog-guide",
+    "title": "零基础搭建免费个人博客 — GitHub Pages 全攻略",
+    "date": "2026-05-13",
+    "category": "教程",
+    "tags": ["GitHub", "博客", "教程", "新手"],
+    "summary": "手把手教你用 GitHub Pages 搭建免费个人博客，无需服务器，无需域名，30 分钟上线。",
+    "content": `# 零基础搭建免费个人博客 — GitHub Pages 全攻略
+
+想拥有一个自己的博客，但不想花钱买服务器？这篇文章教你**完全免费**搭建一个可被搜索引擎收录的个人博客。
+
+## 为什么选 GitHub Pages？
+
+| 对比 | GitHub Pages | 传统方式 |
+|------|-------------|----------|
+| 费用 | 免费 | 服务器每月 30-100 元 |
+| 域名 | 免费 xxx.github.io | 域名每年 50-100 元 |
+| 维护 | 无需运维 | 需要维护服务器 |
+| HTTPS | 自动提供 | 需要手动配置 |
+| 速度 | 全球 CDN | 看服务器配置 |
+
+## 第 1 步：准备一个静态博客
+
+你需要一套 HTML/CSS/JS 文件。可以手写，也可以用现成的静态博客生成器：
+
+- **手写**：最灵活，想怎么改就怎么改
+- **Hexo / Hugo**：成熟的博客框架，主题丰富
+- **纯 HTML**：零依赖，拖拽式开发
+
+\`\`\`html
+<!DOCTYPE html>
+<html>
+<head><title>我的博客</title></head>
+<body>
+  <h1>Hello World!</h1>
+</body>
+</html>
+\`\`\`
+
+## 第 2 步：注册 GitHub 账号
+
+打开 https://github.com 注册，记住用户名和密码就行。
+
+## 第 3 步：创建仓库
+
+1. 点击右上角 + → **New repository**
+2. 仓库名填 \`blog\`（或你的用户名.github.io）
+3. **必须选 Public**（公开，否则无法启用 Pages）
+4. 点 Create
+
+## 第 4 步：推送代码
+
+\`\`\`bash
+cd 你的博客文件夹
+git init
+git add -A
+git commit -m "first commit"
+git remote add origin https://github.com/你的用户名/blog.git
+git push -u origin main
+\`\`\`
+
+## 第 5 步：开启 Pages
+
+进入仓库 → **Settings** → **Pages** → Branch 选 \`main\` → Save。
+
+**1-2 分钟后**，访问 \`https://你的用户名.github.io/blog/\` 就上线了！
+
+## 第 6 步：让搜索引擎收录
+
+创建两个文件：
+
+**sitemap.xml** — 告诉搜索引擎你有哪些页面
+**robots.txt** — 允许搜索引擎抓取
+
+\`\`\`xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://你的用户名.github.io/blog/</loc>
+  </url>
+</urlset>
+\`\`\`
+
+然后到 [Google Search Console](https://search.google.com/search-console) 提交你的站点。
+
+## 以后怎么更新？
+
+写完新文章 → 编辑数据文件 → 再 push 一次：
+
+\`\`\`bash
+git add -A
+git commit -m "新文章"
+git push
+\`\`\`
+
+一句话总结：**本地写 → git push → 自动更新**。
+
+## 写在最后
+
+这套方案的核心优势是：
+
+> 完全免费 + 自动 HTTPS + 全球 CDN + 搜索可收录
+
+无论你是学生、开发者还是只是想记录一些东西，这都是一个很棒的起点。现在就动手搭建你的第一个博客吧！`
+  },
+  {
     "id": "hello-world",
     "title": "Hello World — 我的第一篇博客",
     "date": "2026-05-10",
