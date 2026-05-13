@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://wjj.github.io/blog/</loc>
+    <loc>https://wzz-jj.github.io/blog/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://wjj.github.io/blog/about.html</loc>
+    <loc>https://wzz-jj.github.io/blog/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wjj.github.io/blog/post.html?id=hello-world</loc>
+    <loc>https://wzz-jj.github.io/blog/post.html?id=hello-world</loc>
     <lastmod>2026-05-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wjj.github.io/blog/post.html?id=js-tips</loc>
+    <loc>https://wzz-jj.github.io/blog/post.html?id=js-tips</loc>
     <lastmod>2026-05-12</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wjj.github.io/blog/post.html?id=css-grid</loc>
+    <loc>https://wzz-jj.github.io/blog/post.html?id=css-grid</loc>
     <lastmod>2026-05-13</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wjj.github.io/blog/post.html?id=git-workflow</loc>
+    <loc>https://wzz-jj.github.io/blog/post.html?id=git-workflow</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.8</priority>
   </url>
